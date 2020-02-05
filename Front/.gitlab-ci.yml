@@ -1,0 +1,9 @@
+image: node:latest
+
+before_script:
+    - npm install --quiet
+    - npm install -g @angular/cli
+
+lint:
+    script:
+        - ng lint
